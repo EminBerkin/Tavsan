@@ -1,11 +1,14 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{033F3F05-6E8E-4CC5-87C8-655114B81E33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tavsan.Core", "src\Tavsan.Core\Tavsan.Core.csproj", "{699FF26D-1B4A-41D5-AA0D-22B281CC6117}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tavsan.Domain", "src\Tavsan.Domain\Tavsan.Domain.csproj", "{4DC94963-36C3-48A3-9FE4-D0CE0CE34232}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tavsan.Application", "src\Tavsan.Application\Tavsan.Application.csproj", "{3E8933A2-BF79-4EA8-83AD-E5C752BA4144}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tavsan.Infrastructure", "src\Tavsan.Infrastructure\Tavsan.Infrastructure.csproj", "{337A3EFD-CCB8-4BA8-8564-A097E8D79BB6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tavsan.ConsoleApp", "src\Tavsan.ConsoleApp\Tavsan.ConsoleApp.csproj", "{5CDEA5F3-F760-4AE8-A326-ECA055FF0C14}"
 EndProject
@@ -22,10 +25,18 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{699FF26D-1B4A-41D5-AA0D-22B281CC6117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{699FF26D-1B4A-41D5-AA0D-22B281CC6117}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{699FF26D-1B4A-41D5-AA0D-22B281CC6117}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{699FF26D-1B4A-41D5-AA0D-22B281CC6117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DC94963-36C3-48A3-9FE4-D0CE0CE34232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DC94963-36C3-48A3-9FE4-D0CE0CE34232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DC94963-36C3-48A3-9FE4-D0CE0CE34232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DC94963-36C3-48A3-9FE4-D0CE0CE34232}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E8933A2-BF79-4EA8-83AD-E5C752BA4144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E8933A2-BF79-4EA8-83AD-E5C752BA4144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E8933A2-BF79-4EA8-83AD-E5C752BA4144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E8933A2-BF79-4EA8-83AD-E5C752BA4144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{337A3EFD-CCB8-4BA8-8564-A097E8D79BB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{337A3EFD-CCB8-4BA8-8564-A097E8D79BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{337A3EFD-CCB8-4BA8-8564-A097E8D79BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{337A3EFD-CCB8-4BA8-8564-A097E8D79BB6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5CDEA5F3-F760-4AE8-A326-ECA055FF0C14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5CDEA5F3-F760-4AE8-A326-ECA055FF0C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CDEA5F3-F760-4AE8-A326-ECA055FF0C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,7 +47,9 @@ Global
 		{CCD00CF0-6FAF-4BBA-84DA-8E7CE020A2C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{699FF26D-1B4A-41D5-AA0D-22B281CC6117} = {033F3F05-6E8E-4CC5-87C8-655114B81E33}
+		{4DC94963-36C3-48A3-9FE4-D0CE0CE34232} = {033F3F05-6E8E-4CC5-87C8-655114B81E33}
+		{3E8933A2-BF79-4EA8-83AD-E5C752BA4144} = {033F3F05-6E8E-4CC5-87C8-655114B81E33}
+		{337A3EFD-CCB8-4BA8-8564-A097E8D79BB6} = {033F3F05-6E8E-4CC5-87C8-655114B81E33}
 		{5CDEA5F3-F760-4AE8-A326-ECA055FF0C14} = {033F3F05-6E8E-4CC5-87C8-655114B81E33}
 		{CCD00CF0-6FAF-4BBA-84DA-8E7CE020A2C4} = {5626A432-9E46-47CE-91DD-5B5513031F32}
 	EndGlobalSection

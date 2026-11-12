@@ -21,7 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Tavsan.Core\Tavsan.Core.csproj" />
+    <ProjectReference Include="..\..\src\Tavsan.Application\Tavsan.Application.csproj" />
+    <ProjectReference Include="..\..\src\Tavsan.Infrastructure\Tavsan.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

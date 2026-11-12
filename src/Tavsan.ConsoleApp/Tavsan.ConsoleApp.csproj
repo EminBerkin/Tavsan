@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Tavsan.Core\Tavsan.Core.csproj" />
+    <ProjectReference Include="..\Tavsan.Application\Tavsan.Application.csproj" />
+    <ProjectReference Include="..\Tavsan.Infrastructure\Tavsan.Infrastructure.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

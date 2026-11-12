@@ -1,7 +1,8 @@
+using Tavsan.Application.Game.Operations.Play;
+using Tavsan.Infrastructure.Game.Services;
+using Tavsan.Application.Game.Services;
+using Tavsan.ConsoleApp.Game;
 using System.Text;
-using Tavsan.ConsoleApp;
-using Tavsan.Core.Domain;
-using Tavsan.Core.Services;
 
 Console.OutputEncoding = Encoding.UTF8;
 Console.InputEncoding = Encoding.UTF8;

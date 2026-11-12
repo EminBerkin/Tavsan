@@ -41,15 +41,23 @@ Case metninde net olmayan noktalar için alınan kararlar:
 
 ```
 src/
-  Tavsan.Core/          Oyun kuralları (arayüzden bağımsız)
-    Domain/             Board, Position, Direction, Command, ObstacleType, StepResult
-    Services/           GameEngine, MoveRules, ScenarioParser, RandomObstaclePlacer, BoardSolver
-  Tavsan.ConsoleApp/    Konsol arayüzü (giriş, tahta çizimi, mesajlar)
-tests/
-  Tavsan.Tests/         xUnit birim testleri
+  Tavsan.Domain/Game/
+    Entities/             Board
+    Enums/                Command, Direction, GameStatus, ObstacleType
+    Models/               Position, StepResult
+    Rules/                MoveRules
+  Tavsan.Application/Game/
+    Operations/Play/      GameEngine
+    Operations/Play/Models/ GameResult
+    Operations/Solve/     BoardSolver
+    Operations/Parse/     ScenarioParser
+    Services/             IObstaclePlacer
+  Tavsan.Infrastructure/Game/Services/   RandomObstaclePlacer
+  Tavsan.ConsoleApp/Game/                giriş, tahta çizimi, mesajlar
+tests/Tavsan.Tests/       Domain, Application, Infrastructure, Game
 ```
 
-Kurallar `Tavsan.Core` içinde tutulduğu için aynı çekirdek farklı bir arayüzle (web API, masaüstü vb.) kullanılabilir.
+Bağımlılık yönü `ConsoleApp → Infrastructure → Application → Domain` şeklindedir. Kurallar arayüzden bağımsız olduğu için aynı çekirdek farklı bir arayüzle (web API, masaüstü vb.) kullanılabilir.
 
 ## Örnek çıktı
 
